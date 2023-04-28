@@ -2,7 +2,6 @@ import datetime
 import time
 
 
-
 user_time = int(input("tell a sec:"))
 
 now = datetime.datetime.now()
