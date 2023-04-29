@@ -13,15 +13,23 @@ class  Converter():
         f = i * 2.205
         return f
 
-co = Converter()
-print("what to what? \n (1) C to F\n (2) F to C:")
 
 
-t = int(input(""))
+class calulate(Converter):
 
-if t == 1:
-    print("give me your C:")
-    c = input("")
-    co.C_to_fahrenheit(int(c))
+    def get_from_user(self,ch):
+        if ch == 1:
+            c = float(input("c:"))
+            print(self.C_to_fahrenheit(c))
+
+     
+
+t = int(input("which one?"))
+s = calulate()
+s.get_from_user(t)
 
     
+        
+
+
+            
