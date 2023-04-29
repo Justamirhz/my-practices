@@ -2,10 +2,10 @@ import datetime
 import time
 
 class alarm():
-    def userin(self,j):
-        if j=="3":
+    def userin(self,type):
+        if type=="3":
          self.user_sec = input("tell me sec:")
-        elif j=="2":
+        elif type=="2":
             self.user_m = int(input("tell me minite:"))   
     def calculate_seconds(self):
         now = datetime.datetime.now()
